@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Jersey+25&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+  font-size: 100%;
+  line-height: 1;
+
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(225, 231, 236);
+}
+
+p {
+  margin: 5px 0 10px 0;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  font-size: 100%;
+  line-height: 1.5;
+}
+li {
+  cursor: pointer;
+}
+
+
+/*meu senhor que bagunça e agora tenho que documentar essa merda*/
+
+/* parte dos reset e definiçoes de estilos*/
+
+.faixa-later{
+background-color: #333;
+  height: 50%;
+  width: 30%;
+  position: absolute;
+  right: -0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  transform: translateY(40px);
+  padding: 10px;
+}
+.faixa-later.mostrar {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menu {
+  background-color: rgb(62, 65, 59);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.faixa1{
+  height: 10vh;
+  width: 100vw;
+  background-color: #333;
+  display: block;
+
+}
+.menu img {
+  height: 90px;
+  margin-left: 40px;
+  
+}
+.foto{
+  border-radius: 50%;
+  object-fit: cover;
+  padding-top: 15px;
+}
+
+.menu-inf li::after {
+  content: " ";
+  width: 0;
+  height: 4px;
+  background-color: black;
+  bottom: 0;
+  left: 14px;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+.menu-inf li:hover::after{
+  width: 90%;
+}
+
+.menu span{
+font-size: 26px;
+font-family: "Poppins";
+padding: 0px 30px;
+position: relative; 
+top: -40px;
+}
+
+.menu-inf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+
+.menu-inf li{
+  padding-left: 17px;
+  position: relative;
+  top: 55px;
+ 
+}
+
+#textoParaCopiar {
+  display: none;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* parte da barra de naveção */
+
+.faixa-later a {
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.faixa-later li{
+  padding: 15px 0px 0px 30px;
+   font-style: normal;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.p1t {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0px 30px;
+  font-size: 0, 6vw;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  margin-bottom: 50px;
+  max-width: 800px;
+
+}
+
+
+
+.divisoes {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.divisoes h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+
+}
+
+.divisoes p {
+  font-size: 0, 6vw;
+  margin-bottom: 5px;
+
+}
+.divisoes ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-size: 0, 6vw;
+}
+
+.divisoes li {
+  font-size: 0, 6vw;
+  margin-bottom: 10px;
+}
+
+.tmb-pergunta {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  margin-bottom: 50px;
+  max-width: 500px;
+  height: 80px;
+
+}
+
+.tmb-informaçoes1 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 0px 30px;
+  font-size: 0, 6vw;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.tmb-informaçoes1 p {
+  width: 100%;
+}
+
+.tmb-informaçoes2 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0px 30px;
+  font-size: 0, 6vw;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.tmb-informaçoes1,
+.tmb-informaçoes2,
+.tmb-informaçoes3,
+.tmb-informaçoes4,
+.tmb-informaçoes5,
+.tmb-informaçoes6,
+.tmb-informaçoes7 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 0, 6vw;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  
+
+}
+
+.tmb-informaçoes3 h1 {
+  width: 100%;
+}
+
+.anuncio {
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 20px;
+  
+}
+
+.calc h1 {
+  background-color: blueviolet;
+  text-align: center;
+  height: 60px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.txt-h1 {
+  padding: 16px;
+
+}
+
+.peso,
+.idade,
+.altura {
+  padding: 15px;
+}
+
+.resultado {
+  padding-top: 25px;
+}
